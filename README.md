@@ -22,8 +22,8 @@ This tool only collects in-scope URLS.
 
 1) Download [chromedriver](https://chromedriver.chromium.org/downloads) 
 4) git clone https://github.com/AkaamS/scopy.git
-4) Change chromedriver path location in scopy.py
-5) cd scopy
+4) cd scopy
+5) Change chromedriver path location in scopy.py
 6) python3 scopy.py -h
 
 ## Example Usage

@@ -77,10 +77,13 @@ class main:
     self.ttime /= 2
 
     if len(sys.argv) > 1:
-      site = requests.get(f'https://hackerone.com/{self.programs[0]}')
-      if (site.status_code) != 200:
-        print(f"{colours.FAIL}[+] Error: Program(s) not found{colours.ENDC}")
-        exit()
+      try:
+        site = requests.get(f'https://hackerone.com/{self.programs[0]}')
+        if (site.status_code) != 200:
+          print(f"{colours.FAIL}[+] Error: Program(s) not found{colours.ENDC}")
+          exit()
+      except:
+        print(f"{colours.FAIL}[+] Error: Something went wrong {colours.ENDC}")
     else:
       print(f"{colours.FAIL}[+] Error: Missing argument {colours.ENDC}")
       exit()
@@ -99,12 +102,15 @@ class main:
       path = "/home/USER/Documents/chromedriver"             #Please change chrome driver location 
 
 ###################################################################################################
-      
+
       chrome_options = Options()
       chrome_options.add_argument("--headless")
       driver = webdriver.Chrome(path, options=chrome_options)
 
-      driver.get(site)
+      try:
+        driver.get(site)
+      except:
+        print(f"{colours.FAIL}[+] Error: Check if chrome driver path is changed in scopy.py {colours.ENDC}")
 
       ## 4s threshhold 
       time.sleep(self.ttime) #Allow javascript to load

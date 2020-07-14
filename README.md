@@ -1,4 +1,6 @@
- # scopy MADE BY ALPHAROAH
+ # Scopy 
+MADE BY ALPHAROAH
+
 Collects all valid scopes from hackerone programs
 Can collect multiple scopes at once and output their scopes 
 

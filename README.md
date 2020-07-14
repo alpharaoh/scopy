@@ -5,7 +5,6 @@
 
 ```
 # Scopy 
-Written in Python3<br />
 Collects all valid scopes from hackerone programs<br />
 Can collect multiple scopes at once and output their scopes
 
@@ -14,6 +13,7 @@ Can collect multiple scopes at once and output their scopes
 CHROMER DRIVER DEPENDANT<br />
 This tool only collects in-scope URLS.<br />
 "*." is removed from scope text e.g. *.api.example = api.example<br />
+[written in Python3]
 
 ## Installation
 

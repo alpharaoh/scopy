@@ -8,8 +8,8 @@
 Written in Python3<br />
 Collects all valid scopes from hackerone programs<br />
 Can collect multiple scopes at once and output their scopes
-![Demo](/demo/demo.gif)
 
+![Demo](/demo/demo.gif)
 # Disclaimer 
 CHROMER DRIVER DEPENDANT<br />
 This tool only collects in-scope URLS.<br />

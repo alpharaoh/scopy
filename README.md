@@ -12,6 +12,8 @@ Collects all valid scopes from hackerone programs
 Can collect multiple scopes at once and output their scopes 
 
 # Disclaimer 
+CHROMER DRIVER DEPENDANT
+
 This tool only collects in-scope URLS.
 
 "*." is removed from scope text e.g. *.api.example = api.example

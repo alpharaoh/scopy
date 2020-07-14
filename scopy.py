@@ -28,12 +28,12 @@ class printText:
   [__  |    |  | |__]  \_/  
   ___] |___ |__| |      |    ᴍᴀᴅᴇ ʙʏ ᴀʟᴘʜᴀʀᴀᴏʜ    
 
-Usage: scopy.py [-u NAME] [-o] [-t TIME] [...]
+Usage: scopy.py [-n NAME] [-o] [-t TIME] [...]
 
 Optional Args:
     -h                  Displays this message
-    -u URL(s)           Name of program (hackerone.com/NAME)
-                        -u NAME,NAME1,NAME2 (Make sure to have no spaces between , )
+    -n URL(s)           Name of program (hackerone.com/NAME)
+                        -n NAME,NAME1,NAME2 (Make sure to have no spaces between , )
     -o                  Output only results
     -t TIME             Time to allow javascript to load (Default: 4)
     -s                  Add "https://" to scopes
@@ -67,8 +67,11 @@ class main:
           self.ttime = sys.argv[i+1]
       elif sys.argv[i] == "-s":
         self.show_http = True
-      elif sys.argv[i] == "-u":
-        self.programs = (sys.argv[i+1]).split(",")
+      elif sys.argv[i] == "-n":
+        try:
+          self.programs = (sys.argv[i+1]).split(",")
+        except:
+          print(f"{colours.FAIL}[+] Error: Name not specified{colours.ENDC}")
         
     if self.show_visuals:
       print(printText.ascii)

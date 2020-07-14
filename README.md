@@ -5,7 +5,10 @@
 
 ```
 # Scopy 
+Written in Python3
+
 Collects all valid scopes from hackerone programs
+
 Can collect multiple scopes at once and output their scopes 
 
 # Disclaimer 

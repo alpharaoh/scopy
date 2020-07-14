@@ -1,9 +1,9 @@
-# scopy
+ # scopy MADE BY ALPHAROAH
 Collects all valid scopes from hackerone programs
+Can collect multiple scopes at once and output their scopes 
 
-  ____ ____ ____ ___  _   _ 
-  [__  |    |  | |__]  \_/  
-  ___] |___ |__| |      |    ᴍᴀᴅᴇ ʙʏ ᴀʟᴘʜᴀʀᴀᴏʜ    
+DISCLAIMER: This tool only collects in-scope URLS.
+
 
 Usage: scopy.py [-u NAME] [-o] [-t TIME] [...]
 

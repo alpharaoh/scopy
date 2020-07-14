@@ -43,7 +43,7 @@ Usage: scopy.py [-u NAME] [-o] [-t TIME] [...]
 
 Optional Args:
     -h                  Displays this message
-    -u URL(s)           Name of program (hackerone.com/NAME)
+    -n NAME(s)           Name of program (hackerone.com/NAME)
                         -u NAME,NAME1,NAME2 (Make sure to have no spaces between , )
     -o                  Output only results
     -t TIME             Time to allow javascript to load (Default: 4)

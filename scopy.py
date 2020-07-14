@@ -105,13 +105,14 @@ class main:
 
       chrome_options = Options()
       chrome_options.add_argument("--headless")
-      driver = webdriver.Chrome(path, options=chrome_options)
-
       try:
-        driver.get(site)
+        driver = webdriver.Chrome(path, options=chrome_options)
       except:
         print(f"{colours.FAIL}[+] Error: Check if chrome driver path is changed in scopy.py {colours.ENDC}")
+        exit()
 
+      driver.get(site)
+      
       ## 4s threshhold 
       time.sleep(self.ttime) #Allow javascript to load
       if self.show_visuals:

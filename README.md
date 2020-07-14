@@ -10,6 +10,7 @@ Can collect multiple scopes at once and output their scopes
 
 # Disclaimer 
 This tool only collects in-scope URLS.
+
 "*." is removed from scope text e.g. *.api.example = api.example
 
 ## Installation

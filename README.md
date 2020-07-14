@@ -30,16 +30,16 @@ This tool only collects in-scope URLS.
 
 Single Program:
 ```
-python3 scopy.py -u NAME
+python3 scopy.py -n NAME
 ```
 List of Programs:
 ```
-python3 scopy.py -u NAME,NAME1,NAME2,NAME3
+python3 scopy.py -n NAME,NAME1,NAME2,NAME3
 ```
 ## Options
 
 ```
-Usage: scopy.py [-u NAME] [-o] [-t TIME] [...]
+Usage: scopy.py [-n NAME] [-o] [-t TIME] [...]
 
 Optional Args:
     -h                  Displays this message

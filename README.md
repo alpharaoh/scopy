@@ -7,7 +7,7 @@
 # Scopy 
 Written in Python3<br />
 Collects all valid scopes from hackerone programs<br />
-Can collect multiple scopes at once and output their scopes<br />
+Can collect multiple scopes at once and output their scopes
 ![Demo](/demo/demo.gif)
 
 # Disclaimer 

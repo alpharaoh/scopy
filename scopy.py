@@ -32,7 +32,7 @@ Usage: scopy.py [-n NAME] [-o] [-t TIME] [...]
 
 Optional Args:
     -h                  Displays this message
-    -n URL(s)           Name of program (hackerone.com/NAME)
+    -n NAME(s)           Name of program (hackerone.com/NAME)
                         -n NAME,NAME1,NAME2 (Make sure to have no spaces between , )
     -o                  Output only results
     -t TIME             Time to allow javascript to load (Default: 4)

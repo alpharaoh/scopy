@@ -72,6 +72,7 @@ class main:
           self.programs = (sys.argv[i+1]).split(",")
         except:
           print(f"{colours.FAIL}[+] Error: Name not specified{colours.ENDC}")
+          exit()
         
     if self.show_visuals:
       print(printText.ascii)
